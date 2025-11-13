@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KACEM Solidário - KACEM, SA</title>
+    <link rel="stylesheet" href="Protudos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="app">
+        <div id="app-light">
+            <header class="header">
+                <div class="container">
+                    <div class="cab">
+                        <div class="logo-container">
+                            <a href="index.html" class="logo" aria-label="Página inicial da KACEM">
+                                <img src="img/kacem0.png" alt="KACEM Logo" class="logo-img">
+                            </a>
+                            <a href="index.html" class="logo-text">KACEM</a>
+                        </div>
+                        
+                        <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                        
+                        <nav class="prin-cab" aria-label="Navegação principal">
+                            <a href="index.html" class="nav-cab">
+                                <i class="fas fa-home" aria-hidden="true"></i>
+                                Home
+                            </a>
+                            <div class="nav-cab active" aria-haspopup="true">
+                                <a href="produtos.html" class="nav-link">
+                                    <i class="fas fa-hand-holding-usd" aria-hidden="true"></i>
+                                    Produtos
+                                    <span class="dropdown-icon">⌄</span>
+                                </a>
+                                <div class="submenu">
+                                    <a href="KACEM_Investimento.html" class="submenu-item">KACEM Investimento</a>
+                                    <a href="KACEM_Negócio.html" class="submenu-item">KACEM Negócio</a>
+                                    <a href="KACEM_Protocolo.html" class="submenu-item">KACEM Protocolo</a>
+                                    <a href="KACEM_Solidário.html" class="submenu-item">KACEM Solidário</a>
+                                    <a href="KACEM_Tesouraria.html" class="submenu-item">KACEM Tesouraria</a>
+                                </div>
+                            </div>
+                            <div class="nav-cab" aria-haspopup="true">
+                                <a href="institucional.html" class="nav-link">
+                                    <i class="fas fa-building" aria-hidden="true"></i>
+                                    Institucional
+                                    <span class="dropdown-icon">⌄</span>
+                                </a>
+                                <div class="submenu">
+                                    <div class="submenu-title">Sobre nós:</div>
+                                    <a href="sobre-nos.html" class="submenu-item">Sobre a KACEM, SA</a>
+                                    
+                                    <div class="submenu-divider"></div>
+                                    
+                                    <div class="submenu-title">Informação legal:</div>
+                                    <a href="termos.html" class="submenu-item">Termos e Condições Gerais</a>
+                                    <a href="precario.html" class="submenu-item">Preçário</a>
+                                    <a href="politica-reclamacoes.html" class="submenu-item">Política de Reclamação</a>
+                                    <a href="relatorio-contas.html" class="submenu-item">Relatório e Contas</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Conteúdo da Página -->
+            <section class="page-header">
+                <div class="container">
+                    <h1>KACEM Solidário</h1>
+                    <p>Crédito destinado a comerciantes em nome individual organizados em grupos solidários, sem garantias físicas</p>
+                </div>
+            </section>
+
+            <section class="product-highlights">
+                <div class="container">
+                    <div class="highlight-grid">
+                        <div class="highlight-card">
+                            <i class="fas fa-wallet"></i>
+                            <h3>Até 3.000.000 Kz/Grupo</h3>
+                            <p>Crédito concedido a grupos de 3 a 5 comerciantes da mesma comunidade</p>
+                        </div>
+                        
+                        <div class="highlight-card">
+                            <i class="fas fa-calendar-alt"></i>
+                            <h3>Até 12 Meses</h3>
+                            <p>Destinado a pequenos comerciantes com o seu próprio negócio</p>
+                        </div>
+                        
+                        <div class="highlight-card">
+                            <i class="fas fa-percentage"></i>
+                            <h3>Sem Garantia Física</h3>
+                            <p>O crédito é baseado na confiança do grupo e na solidariedade entre membros</p>
+                        </div>
+                        
+                        <div class="highlight-card">
+                            <i class="fas fa-file-signature"></i>
+                            <h3>Análise Personalizada</h3>
+                            <p>Avaliação cuidadosa para um crédito adequado</p>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center">
+                        <a href="solicitar.html" class="btn btn-large">Solicitar Agora</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pdf-viewer-section">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Informação Completa do Produto</h2>
+                        <p>Consulte abaixo o documento completo com todas as informações sobre o KACEM Solidário</p>
+                    </div>
+                    
+                    <div class="viewer-container">
+                        <div class="viewer-header">
+                            <h3>Ficha Técnica Informativa - KACEM Solidário</h3>
+                            <div class="viewer-controls">
+                                <button id="zoom-in" title="Aumentar zoom"><i class="fas fa-search-plus"></i></button>
+                                <button id="zoom-out" title="Diminuir zoom"><i class="fas fa-search-minus"></i></button>
+                                <button id="fit-width" title="Ajustar à largura"><i class="fas fa-arrows-alt-h"></i></button>
+                            </div>
+                        </div>
+                        
+                        <div class="pdf-container">
+                            <div class="pdf-loading">
+                                <div class="spinner"></div>
+                                <p>A carregar documento...</p>
+                            </div>
+                            <iframe id="pdf-viewer" src="pdf/KACEM_Negócio.pdf" style="display: none;"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features-section">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Vantagens do KACEM Solidário</h2>
+                        <p>Permite a comerciantes sem garantias físicas aceder a crédito em grupo</p>
+                    </div>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <h3><i class="fas fa-rocket"></i> Crédito em Grupo</h3>
+                            <p>Promove a colaboração e solidariedade entre comerciantes da mesma comunidade.</p>
+                            <ul>
+                                <li>Financiamento para capital de giro e operações</li>
+                                <li>Apoio à expansão e manutenção do negócio</li>
+                                <li>Crédito adaptado ao ciclo do negócio</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <h3><i class="fas fa-cogs"></i> Solidariedade Comunitária</h3>
+                            <p>Fortalece a confiança e a cooperação entre comerciantes da mesma comunidade.</p>
+                            <ul>
+                                <li>Documentação reduzida</li>
+                                <li>Análise rápida do pedido</li>
+                                <li>Prazos até 18 meses</li>
+                                <li>Possibilidade de período de carência</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <h3><i class="fas fa-hand-holding-heart"></i> Parceiro de Confiança</h3>
+                            <p>Apoio e orientação para que o seu negócio prospere com segurança.</p>
+                            <ul>
+                                <li>Orientação financeira e de gestão</li>
+                                <li>Acompanhamento pós-crédito</li>
+                                <li>Suporte técnico durante todo o processo</li>
+                                <li>Acompanhamento para desenvolvimento sustentável</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="requirements-section">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Requisitos e Condições</h2>
+                        <p>Conheça as condições para aceder ao crédito KACEM Negócio</p>
+                    </div>
+                    
+                    <div class="requirements-grid">
+                        <div class="requirement-card">
+                            <i class="fas fa-id-card"></i>
+                            <h3>Documentação</h3>
+                            <p>BI, comprovativo de residência, comprovativo de atividade e garantias conforme montante solicitado.</p>
+                        </div>
+                        
+                        <div class="requirement-card">
+                            <i class="fas fa-user-check"></i>
+                            <h3>Perfil do Requerente</h3>
+                            <p>Pessoas singulares ou coletivas com atividade económica formal ou informal comprovada.</p>
+                        </div>
+                        
+                        <div class="requirement-card">
+                            <i class="fas fa-business-time"></i>
+                            <h3>Condições do Negócio</h3>
+                            <p>Negócio em funcionamento há pelo menos 6 meses e com viabilidade demonstrada.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center" style="margin-top: 40px;">
+                        <a href="solicitar.html" class="btn btn-large">Solicitar Agora</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <div class="container">
+                    <h2>Quer impulsionar o seu negócio?</h2>
+                    <p>Solicite agora</p>
+                    <div class="cta-buttons">
+                        <a href="solicitar.html" class="btn btn-large">Solicitar Crédito</a>
+                        <a href="contacto.html" class="btn btn-outline">Falar com um técnico</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>KACEM, SA</h3>
+                    <p>Sociedade de Microcrédito autorizada e regulada pelo Banco Nacional de Angola. Registro nº: 321</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contactos</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Centralidade do Cequele, Prédio 28, Bloco 8, Apartamento 102</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+244 943 269 490</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>geral@kacem.co.ao</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Produtos</h3>
+                    <ul class="footer-links">
+                        <li><a href="KACEM_Investimento.html">KACEM Investimento</a></li>
+                        <li><a href="KACEM_Negócio.html">KACEM Negócio</a></li>
+                        <li><a href="KACEM_Protocolo.html">KACEM Protocolo</a></li>
+                        <li><a href="KACEM_Solidário.html">KACEM Solidário</a></li>
+                        <li><a href="KACEM_Tesouraria.html">KACEM Tesouraria</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Informação Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="termos.html">Termos e Condições Gerais</a></li>
+                        <li><a href="precario.html">Preçário</a></li>
+                        <li><a href="politica-reclamacoes.html">Política de Reclamação</a></li>
+                        <li><a href="relatorio-contas.html">Relatório e Contas</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 KACEM, SA - Sociedade de Microcrédito. Todos os direitos reservados.</p>
+                <p>Entidade autorizada e regulada pelo Banco Nacional de Angola.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript para o menu mobile
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const mainNav = document.querySelector('.prin-cab');
+            
+            menuToggle.addEventListener('click', function() {
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isExpanded);
+                mainNav.classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+            });
+            
+            // Fechar menu ao clicar em um item (apenas mobile)
+            const navItems = document.querySelectorAll('.nav-cab');
+            navItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    if (window.innerWidth < 768) {
+                        mainNav.classList.remove('active');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                        document.body.classList.remove('menu-open');
+                    }
+                });
+            });
+
+            // PDF Viewer functionality
+            const pdfViewer = document.getElementById('pdf-viewer');
+            const pdfLoading = document.querySelector('.pdf-loading');
+            const zoomInBtn = document.getElementById('zoom-in');
+            const zoomOutBtn = document.getElementById('zoom-out');
+            const fitWidthBtn = document.getElementById('fit-width');
+            
+            let zoomLevel = 1;
+            
+            // Mostrar o PDF quando estiver carregado
+            pdfViewer.onload = function() {
+                pdfLoading.style.display = 'none';
+                pdfViewer.style.display = 'block';
+            };
+            
+            // Controlos de zoom
+            zoomInBtn.addEventListener('click', function() {
+                if (zoomLevel < 2) {
+                    zoomLevel += 0.1;
+                    pdfViewer.style.transform = `scale(${zoomLevel})`;
+                    pdfViewer.style.transformOrigin = 'center top';
+                }
+            });
+            
+            zoomOutBtn.addEventListener('click', function() {
+                if (zoomLevel > 0.5) {
+                    zoomLevel -= 0.1;
+                    pdfViewer.style.transform = `scale(${zoomLevel})`;
+                    pdfViewer.style.transformOrigin = 'center top';
+                }
+            });
+            
+            fitWidthBtn.addEventListener('click', function() {
+                zoomLevel = 1;
+                pdfViewer.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
